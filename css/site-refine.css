@@ -864,6 +864,11 @@ h1, h2, h3, h4, h5, h6,
   box-shadow: 0 10px 28px rgba(4, 38, 61, 0.18);
 }
 
+.cta-banner .cta-text {
+  flex: 1 1 44rem;
+  min-width: 0;
+}
+
 .cta-banner h2,
 .cta-banner p {
   color: #ffffff !important;
@@ -878,8 +883,52 @@ h1, h2, h3, h4, h5, h6,
 .cta-banner p {
   margin: 0 !important;
   opacity: 0.95;
-  max-width: 36rem;
+  max-width: 44rem;
   line-height: 1.55;
+}
+
+.cta-banner .cta-phone {
+  color: #ffffff !important;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.cta-banner .visit-prep {
+  margin-top: 1.2rem;
+}
+
+.cta-banner .visit-prep h3 {
+  color: #ffffff !important;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 0.65rem;
+}
+
+.cta-banner .visit-prep ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 1.5rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.cta-banner .visit-prep li {
+  position: relative;
+  color: #ffffff;
+  padding-left: 1.25rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.cta-banner .visit-prep li::before {
+  content: '\2713';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
 }
 
 .cta-banner .btn-cta {
@@ -909,6 +958,15 @@ h1, h2, h3, h4, h5, h6,
   .cta-banner p {
     margin-left: auto !important;
     margin-right: auto !important;
+  }
+
+  .cta-banner .visit-prep {
+    text-align: left;
+  }
+
+  .cta-banner .visit-prep ul {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
   }
 }
 
