@@ -1,5 +1,5 @@
 /**
- * Essential Rheumatology — layout & visibility fixes
+ * Essential Rheumatology â€” layout & visibility fixes
  * Loads last to resolve alignment, contrast, and spacing issues.
  */
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: -0.02em;
 }
 
-/* ========== Top bar — prevent crush / overlap ========== */
+/* ========== Top bar â€” prevent crush / overlap ========== */
 .top-bar {
   background: #04263d !important;
   color: #ffffff !important;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* ========== Hero — force readable white text ========== */
+/* ========== Hero â€” force readable white text ========== */
 .hero {
   position: relative !important;
   min-height: 330px !important;
@@ -566,7 +566,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* Conditions — equal-width CSS grid (fixes uneven columns) */
+/* Conditions â€” equal-width CSS grid (fixes uneven columns) */
 .conditions-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -726,7 +726,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* ========== Marketing / tools — readable + aligned ========== */
+/* ========== Marketing / tools â€” readable + aligned ========== */
 #patient-portal,
 #healow-app,
 #healow-steps,
@@ -846,7 +846,7 @@ h1, h2, h3, h4, h5, h6,
   overflow: hidden;
 }
 
-/* ========== CTA — original card style ========== */
+/* ========== CTA â€” original card style ========== */
 .cta-banner {
   background: #f4f7fa !important;
   padding: 3.5rem 0 !important;
@@ -1044,3 +1044,50 @@ h1, h2, h3, h4, h5, h6,
   color: #ffffff !important;
   border-radius: 4px !important;
 }
+
+/* Featured condition guides */
+.condition-feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.condition-feature-card {
+  background: #ffffff;
+  border: 1px solid #d9e4ec;
+  border-top: 4px solid #0a4d7c;
+  border-radius: 6px;
+  padding: 1.4rem;
+}
+
+.condition-feature-card h3 {
+  color: #173f5f;
+  font-size: 1.12rem;
+  margin: 0 0 0.65rem;
+}
+
+.condition-feature-card p {
+  color: #425466;
+  font-size: 0.94rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.condition-feature-card a {
+  color: #0a4d7c;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.condition-feature-card a:hover,
+.condition-feature-card a:focus-visible {
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  .condition-feature-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
