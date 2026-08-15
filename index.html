@@ -132,7 +132,7 @@
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
                 <div class="nav-buttons">
-                    <a href="https://mycw254.ecwcloud.com/portal30724/jsp/login.jsp" class="btn btn-login" target="_blank" rel="noopener noreferrer">Patient Login</a>
+                    <span class="btn btn-login patient-login-disabled" aria-disabled="true" title="Patient portal login is not yet available">Patient Login</span>
                     <a href="tel:+18603256908" class="btn btn-appointment schedule-action">Call to Schedule</a>
                 </div>
             </div>
@@ -149,8 +149,8 @@
                 <p class="hero-desc">Essential Rheumatology is a rheumatology practice in Avon, Connecticut, providing comprehensive diagnosis and treatment for autoimmune, rheumatic, and musculoskeletal diseases.</p>
                 <div class="hero-actions">
                     <a href="tel:+18603256908" class="btn-hero-primary schedule-action">Call to Schedule</a>
-                    <a href="https://mycw254.ecwcloud.com/portal30724/jsp/login.jsp" class="btn-hero-secondary" target="_blank" rel="noopener noreferrer">Patient Portal Login</a>
-                    <a href="https://mycw254.ecwcloud.com/portal30724/jsp/login.jsp" class="btn-hero-tool" target="_blank" rel="noopener noreferrer">Pay Your Bill</a>
+                    <span class="btn-hero-secondary patient-login-disabled" aria-disabled="true" title="Patient portal login is not yet available">Patient Portal Login</span>
+                    <span class="btn-hero-tool billing-disabled" aria-disabled="true" title="Online bill payment is not yet available">Pay Your Bill</span>
                     <a href="#patient-tools" class="btn-hero-tool">Easy Check-in</a>
                 </div>
             </div>
@@ -436,11 +436,7 @@
                     height="26"
                     alt="Step 2"
                   />
-                  <p>
-                    Search for our practice by entering this unique code on the
-                    healow app -
-                    <strong class="ai-practice-code">AJBBED</strong>.
-                  </p>
+                  <p>Search for Essential Rheumatology in the healow app.</p>
                 </div>
               </div>
             </div>
@@ -483,7 +479,7 @@
               </div>
             </div>
           </div>
-          <div class="row practice-code-row g-0 mt-4">
+          <div class="row practice-code-row g-0 mt-4" hidden>
             <div
               class="col-md-7 practice-code practice-code-left d-flex align-items-center"
             >

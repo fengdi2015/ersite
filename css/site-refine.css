@@ -208,6 +208,21 @@ h1, h2, h3, h4, h5, h6,
 
 .copy-phone-notice.visible { opacity: 1; transform: translate(-50%, 0); }
 
+.patient-login-disabled,
+.patient-login-disabled:hover,
+.patient-login-disabled:focus,
+.patient-login-disabled:active,
+.billing-disabled,
+.billing-disabled:hover,
+.billing-disabled:focus,
+.billing-disabled:active {
+  cursor: not-allowed !important;
+  opacity: 0.58 !important;
+  pointer-events: none !important;
+  filter: grayscale(0.25);
+  box-shadow: none !important;
+}
+
 @media (max-width: 991px) {
   .main-nav-header {
     max-height: 100dvh;
