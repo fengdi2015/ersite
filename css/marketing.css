@@ -1,0 +1,545 @@
+:root {
+  --mkt-primary-dark: #04263d;
+  --mkt-healow-blue: #04263d;
+  --mkt-practice-code: #04263d;
+  --mkt-surface: #ffffff;
+  --mkt-accent-dark: #063556;
+  --mkt-accent: #0d6aa3;
+  --mkt-text-muted: #555555;
+  --mkt-text: #333333;
+  --mkt-check: #0a4d7c;
+  --mkt-link: #0a4d7c;
+  --color-primary-dark: #063556;
+  --color-primary: #0a4d7c;
+}
+/* ============================================================
+   MARKETING SECTION - Exact match to design reference
+   ============================================================ */
+
+/* Prevent horizontal scroll - on body only (html breaks position: sticky) */
+body {
+  overflow-x: hidden;
+}
+
+/* ----- Marketing tokens (inherit theme-tokens.css) ----- */
+
+/* ===== 1. PATIENT PORTAL ===== */
+#patient-portal {
+  background: var(--mkt-surface);
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+#patient-portal .portal-image {
+  display: block;
+  max-width: 100%;
+  border-radius: 4px;
+}
+
+/* 24/7 Access - circular orange icon + text */
+.portal-24-7 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.portal-24-7-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  background: var(--mkt-accent);
+  color: var(--mkt-surface);
+  border-radius: 50%;
+}
+
+.portal-24-7-icon .material-icons {
+  font-size: 24px;
+}
+
+.portal-24-7-text {
+  font-size: 0.95rem;
+  color: var(--mkt-text);
+  font-weight: 500;
+}
+
+#patient-portal h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--mkt-text);
+  margin-bottom: 1rem;
+  line-height: 1.3;
+}
+
+#patient-portal > .container > .row > .col-md-7 > p {
+  color: var(--mkt-text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#portal-features h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--mkt-text);
+  margin-bottom: 0.75rem;
+}
+
+#portal-features .list-group-item {
+  padding: 0.25rem 0;
+  font-size: 0.95rem;
+  color: var(--mkt-text-muted);
+  background: transparent !important;
+  border: none !important;
+}
+
+.material-icons.custom-material-style {
+  font-size: 18px;
+  color: var(--mkt-check);
+  vertical-align: middle;
+  margin-right: 0.5rem;
+}
+
+/* Portal CTA - white/light card, orange button */
+.card.portal-cta {
+  background: var(--mkt-surface);
+  border: 1px solid var(--mkt-border);
+  border-radius: 8px;
+  margin-top: 1rem;
+  width: max-content;
+  text-align: center;
+}
+
+.card.portal-cta .card-body {
+  padding: 1.25rem;
+}
+
+.btn.portal-button {
+  display: block;
+  width: 100%;
+  background: var(--mkt-accent) !important;
+  color: var(--mkt-text) !important;
+  border: none !important;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  transition: background 0.2s;
+}
+
+.btn.portal-button:hover {
+  background: var(--mkt-accent-dark) !important;
+  color: var(--mkt-text) !important;
+}
+
+.card.portal-cta .card-text {
+  color: var(--mkt-text-muted);
+  font-size: 0.875rem;
+  margin-top: 0.75rem;
+  margin-bottom: 0;
+}
+
+.card.portal-cta a[href^="tel"] {
+  color: var(--mkt-link) !important;
+  font-weight: 500;
+}
+
+/* ===== 2. HEALOW APP ===== */
+#healow-app {
+  background: var(--mkt-surface);
+  padding-top: 3rem !important;
+  padding-bottom: 2rem !important;
+}
+
+#healow-app h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--mkt-text);
+  margin-bottom: 1rem;
+}
+
+#healow-app > .container > .row > .col-md-7 > p {
+  color: var(--mkt-text-muted);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#healow-app a:not(.text-white):not([class*="font-weight"]) {
+  color: var(--mkt-link) !important;
+}
+
+.card.stores-cta {
+  background: var(--mkt-primary-dark) !important;
+  border: none;
+  border-radius: 8px;
+  width: max-content;
+  text-align: center;
+}
+
+.card.stores-cta .card-body {
+  padding: 1.25rem;
+  color: var(--mkt-surface);
+}
+
+.card.stores-cta h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--mkt-surface) !important;
+  margin-bottom: 1rem;
+}
+
+.card.stores-cta a.text-white.font-weight-bold {
+  color: var(--mkt-surface) !important;
+  text-decoration: underline;
+}
+
+.card.stores-cta img {
+  display: inline-block;
+  margin: 0 4px;
+}
+
+#healow-app .col-md-5 img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ===== 3. HEALOW STEPS ===== */
+#healow-steps {
+  background: #ffffff !important;
+  padding-top: 2.5rem !important;
+  padding-bottom: 3rem !important;
+  max-width: 100%;
+}
+
+.healow-steps-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--mkt-text);
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.healow-steps-grid {
+  margin-bottom: 2rem;
+}
+
+.healow-steps-grid:last-of-type {
+  margin-bottom: 0;
+}
+
+.step-block {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.step-icon {
+  display: block;
+  width: 75px;
+  height: 75px;
+  flex-shrink: 0;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.step-badge {
+  display: block;
+  width: 67px;
+  height: 26px;
+}
+
+.step-block p {
+  color: var(--mkt-text);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+}
+
+/* Practice code block - LEFT dark blue, RIGHT white with blue border */
+.practice-code-row {
+  margin-top: 2.5rem !important;
+  max-width: 700px;
+  margin: auto;
+}
+
+.practice-code {
+  padding: 1.25rem 1.5rem !important;
+  min-height: 95px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-code-left {
+  background: var(--mkt-healow-blue) !important;
+  border-radius: 8px 0 0 8px;
+  justify-content: flex-start;
+}
+
+.practice-code-left p {
+  color: #ffffff !important;
+  font-size: 1rem;
+  margin: 0;
+  text-align: left;
+  padding-left: 0.5rem;
+}
+
+.practice-code-right {
+  background: var(--mkt-surface) !important;
+  border: 2px solid var(--mkt-healow-blue);
+  border-left: none;
+  border-radius: 0 8px 8px 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.practice-code-label {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: var(--mkt-text);
+  margin-bottom: 0.35rem;
+}
+
+.practice-code-right .code {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--mkt-practice-code, var(--color-primary-dark));
+  letter-spacing: 0.08em;
+  padding: 0.25rem 0.5rem;
+  border: 2px dotted var(--mkt-practice-code, var(--color-primary-dark));
+  border-radius: 4px;
+}
+
+/* ===== 4. PATIENT TOOLS ===== */
+#patient-tools {
+  overflow-x: hidden;
+}
+.table#insurance-providers, .table#nearby-location, p, #patient-portal #portal-features, #patient-tools .patient-tools-tab, #faqs, #footer {
+  font-size: 1rem;
+}
+.justify-content-center {
+  -webkit-box-pack: center !important;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+}
+#patient-tools .patient-tools-tab #p-tools-Content {
+  /* Translucent light panel — healow iframes use black text */
+  background: #16191f12;
+  overflow-x: hidden;
+}
+
+#patient-tools .tab-pane {
+  padding: 3rem;
+  overflow-x: hidden;
+}
+
+.patient-tools-iframe-wrap {
+  overflow-x: hidden;
+  max-width: 100%;
+  min-width: 0;
+}
+.nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
+  color: var(--mkt-tab-text);
+  background-color: var(--mkt-surface);
+  border-color: var(--mkt-border) var(--mkt-border) var(--mkt-surface);
+}
+.mgdiframe-checkin {
+  min-height: 370px;
+  height: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+/* ===== 5. FAQs ===== */
+#faqs {
+  background: var(--mkt-surface);
+  padding-top: 2rem !important;
+  padding-bottom: 3rem !important;
+  overflow-x: clip;
+}
+
+.faq-container {
+  max-width: min(1400px, 96vw);
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.faq-iframe-wrapper {
+  overflow: hidden;
+  max-width: 100%;
+  min-width: 0;
+}
+
+#faqs .mgdiframe-faqs {
+  min-height: 0;
+  height: 820px;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  border: none;
+  overflow: hidden;
+}
+
+#faqs h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--mkt-text);
+  margin-bottom: 1.5rem;
+}
+
+#faqTabs.nav-tabs {
+  border-bottom: 1px solid var(--mkt-border);
+}
+
+#faqTabs .nav-link {
+  border: 1px solid var(--mkt-border);
+  border-bottom: none;
+  border-radius: 6px 6px 0 0;
+  color: var(--mkt-text-muted);
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+  background: var(--mkt-bg-tab-inactive);
+  margin-right: 2px;
+}
+
+#faqTabs .nav-link:hover {
+  color: var(--mkt-text);
+  background: var(--mkt-bg-tab-inactive);
+}
+
+#faqTabs .nav-link.active {
+  background: var(--mkt-surface) !important;
+  color: var(--mkt-primary) !important;
+  border-color: var(--mkt-border);
+  border-bottom: 3px solid var(--mkt-primary);
+  margin-bottom: -1px;
+  font-weight: 600;
+}
+
+#faqTabsContent.tab-content {
+  background: var(--mkt-surface);
+  border: 1px solid var(--mkt-border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  padding: 1.25rem !important;
+}
+
+#clinic-faq > p {
+  color: var(--mkt-text-muted);
+  margin-bottom: 1.25rem;
+  font-size: 0.95rem;
+}
+
+#accordion .card {
+  border: 1px solid var(--mkt-border);
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+#accordion .card-header {
+  background: var(--mkt-bg-tab-inactive);
+  border: none;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#accordion .card-header[aria-expanded="true"] {
+  background: var(--mkt-surface);
+  border-radius: 6px 6px 0 0;
+}
+
+#accordion .card-header[aria-expanded="true"] {
+  border-bottom: 1px solid var(--mkt-border);
+}
+
+#accordion .card-header h5 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--mkt-text);
+  margin: 0;
+}
+
+#accordion .card-body {
+  padding: 1rem 1.25rem;
+  color: var(--mkt-text-muted);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+#accordion .card-body a {
+  color: var(--mkt-link) !important;
+}
+.mgdiframe-checkin {
+  min-height: 340px !important;
+}
+.mgdiframe-reminders{
+  min-height: 450px !important;
+}
+.mgdiframe-visits{
+  min-height: 420px !important;
+}
+.mgdiframe-mom{
+  min-height: 480px !important;
+}
+.mgdiframe-kids {
+  min-height: 380px !important;
+}
+
+@media (max-width: 768px) {
+  #faqs .mgdiframe-faqs {
+    min-height: 0;
+    height: 980px;
+  }
+  #patient-tools .tab-pane{
+    padding: 1rem !important;
+  }
+  .mgdiframe-checkin {
+    min-height: 500px !important;
+  }
+  .mgdiframe-reminders{
+    min-height: 780px !important;
+  }
+  .mgdiframe-visits{
+    min-height: 550px !important;
+  }
+  .mgdiframe-mom{
+    min-height: 720px !important;
+  }
+  .mgdiframe-kids {
+    min-height: 550px !important;
+  }
+  #healow-app{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  #patient-portal{
+    /* padding-top: 1rem !important; */
+    padding-bottom: 1rem !important;
+  }
+  #patient-tools{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  #faqs{
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+}

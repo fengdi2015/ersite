@@ -1,0 +1,638 @@
+/* CRM wizard theme — applies to all templates */
+:root {
+  --crm-theme-primary: #0a4d7c;
+  --crm-theme-secondary: #737373;
+  --crm-theme-primary-dark: #063556;
+  --crm-theme-button: #0a4d7c;
+  --crm-theme-button-hover: #063556;
+  --crm-dark-surface: #04263d;
+  --crm-theme-btn-radius: 8px;
+  --crm-btn-solid-text: #ffffff;
+  --crm-btn-outline-text: #2d2d2d;
+  --crm-btn-outline-hover-bg: #7ec0e9;
+  --crm-btn-outline-hover-text: #2d2d2d;
+  --crm-text-on-light: #2d2d2d;
+  --crm-text-on-dark: #ffffff;
+  --crm-text-muted-on-light: #333333;
+  --text-on-color-pink-light: #2d2d2d;
+  --text-muted-on-color-pink-light: #333333;
+  --text-on-color-pink: #2d2d2d;
+  --text-muted-on-color-pink: #333333;
+  --text-on-color-rose-pink: #2d2d2d;
+  --text-muted-on-color-rose-pink: #333333;
+  --text-on-color-surface-muted: #2d2d2d;
+  --text-muted-on-color-surface-muted: #333333;
+  --text-on-color-surface-tint: #2d2d2d;
+  --text-muted-on-color-surface-tint: #333333;
+  --text-on-color-surface-alt: #2d2d2d;
+  --text-muted-on-color-surface-alt: #333333;
+  --text-on-mkt-surface: #2d2d2d;
+  --text-muted-on-mkt-surface: #333333;
+  --text-on-mkt-surface-alt: #ffffff;
+  --text-muted-on-mkt-surface-alt: rgba(255, 255, 255, 0.92);
+  --text-on-brand-surface: #2d2d2d;
+  --text-muted-on-brand-surface: #333333;
+  --text-on-dark-purple: #ffffff;
+  --text-muted-on-dark-purple: rgba(255, 255, 255, 0.92);
+  --text-on-dark-purple-gray: #ffffff;
+  --text-muted-on-dark-purple-gray: rgba(255, 255, 255, 0.92);
+  --text-on-mkt-blue-dark: #ffffff;
+  --text-muted-on-mkt-blue-dark: rgba(255, 255, 255, 0.92);
+  --text-on-dark-blue: #ffffff;
+  --text-muted-on-dark-blue: rgba(255, 255, 255, 0.92);
+  --text-on-mkt-primary-dark: #ffffff;
+  --text-muted-on-mkt-primary-dark: rgba(255, 255, 255, 0.92);
+  --text-on-brand-dark: #ffffff;
+  --text-muted-on-brand-dark: rgba(255, 255, 255, 0.92);
+  --text-on-color-secondary: #ffffff;
+  --text-muted-on-color-secondary: rgba(255, 255, 255, 0.92);
+  --text-on-mkt-healow-blue: #ffffff;
+  --text-muted-on-mkt-healow-blue: rgba(255, 255, 255, 0.92);
+  --text-on-crm-dark-surface: #ffffff;
+  --text-muted-on-crm-dark-surface: rgba(255, 255, 255, 0.92);
+  --text-on-brand-teal: #2d2d2d;
+  --text-muted-on-brand-teal: #333333;
+  --text-on-color-accent: #ffffff;
+  --text-muted-on-color-accent: rgba(255, 255, 255, 0.92);
+  --text-on-mkt-accent: #ffffff;
+  --text-muted-on-mkt-accent: rgba(255, 255, 255, 0.92);
+  --text-on-mkt-accent-dark: #ffffff;
+  --text-muted-on-mkt-accent-dark: rgba(255, 255, 255, 0.92);
+  --text-on-color-primary: #ffffff;
+  --text-muted-on-color-primary: rgba(255, 255, 255, 0.92);
+  --text-on-light-blue: #2d2d2d;
+  --text-muted-on-light-blue: #333333;
+  --text-on-teal: #ffffff;
+  --text-muted-on-teal: rgba(255, 255, 255, 0.92);
+  --text-on-hot-pink: #ffffff;
+  --text-muted-on-hot-pink: rgba(255, 255, 255, 0.92);
+  --text-on-orange: #ffffff;
+  --text-muted-on-orange: rgba(255, 255, 255, 0.92);
+  --text-on-color-app-button: #ffffff;
+  --text-muted-on-color-app-button: rgba(255, 255, 255, 0.92);
+  --text-on-color-pink-btn: #ffffff;
+  --text-muted-on-color-pink-btn: rgba(255, 255, 255, 0.92);
+
+  /* style1 */
+  --color-primary: #0a4d7c;
+  --color-primary-dark: #063556;
+  --color-plum: #737373;
+  --color-pink-btn: #0a4d7c;
+  --color-accent-red: #0d6aa3;
+  --color-rose-pink: #3d7eab;
+
+  /* style2 / healow marketing */
+  --dark-purple: #04263d;
+  --dark-purple-gray: #04263d;
+  --light-purple: #0a4d7c;
+  --pink: #3d7eab;
+  --hot-pink: #0d6aa3;
+  --blue: #0a4d7c;
+  --dark-blue: #04263d;
+  --teal: #0a4d7c;
+  --light-blue: #eef3f7;
+  --mkt-blue: #0a4d7c;
+  --mkt-blue-dark: #04263d;
+  --mkt-orange: #0d6aa3;
+  --mkt-accent: #0d6aa3;
+  --mkt-accent-dark: #063556;
+  --mkt-link: #0a4d7c;
+  --mkt-check: #0a4d7c;
+  --mkt-surface: #ffffff;
+  --mkt-surface-alt: #04263d12;
+  --mkt-practice-code: #04263d;
+  --mkt-tab-text: #495057;
+  --mkt-bg-tab-inactive: #ececec;
+
+  /* style3 classic healow */
+  --color-secondary: #04263d;
+  --color-accent: #0d6aa3;
+  --color-surface-muted: #f5f7fa;
+  --color-surface-tint: #c5d6e4;
+  --color-surface-alt: #eeeeee;
+  --color-faq-border: #b5d8ef;
+  --color-faq-border-soft: #c5dff2;
+  --color-faq-border-light: #d0e6f5;
+  --color-faq-gradient-start: #d5ebf8;
+  --color-chip-bg: #c8e4f6;
+  --color-chip-border: #afd8f1;
+  --color-chip-text: #063556;
+  --color-chip-hover: #8fc1e0;
+  --color-text-shadow: #eef3f7;
+  --color-insurance-muted: #8aa9c0;
+  --brand-heading: #063556;
+  --brand-hero-accent: #0a4d7c;
+  --brand-dark: #04263d;
+  --brand-teal: #0a4d7c;
+  --brand-surface: #f5f7fa;
+  --brand-red: #0d6aa3;
+  --brand-muted: #6b90b0;
+  --brand-highlight: #3d7eab;
+  --brand-lime: #c5d6e4;
+  --mkt-warm-accent: #0d6aa3;
+  --hero-card-icon-bg: #0a4d7c;
+  --social-icon-color: #0a4d7c;
+  --footer-heading-color: #ffffff;
+
+  /* bootstrap tokens */
+  --bs-primary: #0a4d7c;
+  --bs-primary-rgb: 10, 77, 124;
+  --bs-link-color: #0a4d7c;
+  --bs-link-hover-color: #063556;
+
+  --font-body: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-heading: 'Poppins', Georgia, 'Times New Roman', serif;
+  --color-pink-border: #8f8f8f;
+  --color-orange: #7e7e7e;
+  --color-gray-dark: #2d2d2d;
+  --color-gray: #6b6b6b;
+  --color-gray-light: #9a9a9a;
+  --mkt-orange-gold: #777777;
+  --mkt-text: #333333;
+  --mkt-text-muted: #555555;
+  --color-secondary: #04263d;
+  --brand-dark: #04263d;
+  --brand-teal: #3a9ad9;
+  --brand-heading: #063556;
+  --brand-hero-accent: #0a4d7c;
+  --mkt-warm-accent: #0d6aa3;
+  --hero-card-icon-bg: #0a4d7c;
+  --social-icon-color: #0a4d7c;
+  --footer-heading-color: #ffffff;
+  --color-primary-darker: #063556;
+  --crm-theme-accent: #0d6aa3;
+  --mkt-healow-blue: #04263d;
+  --color-code-highlight: #fff4cc;
+  --color-text-light: #6b7280;
+  --color-text: #2d2d2d;
+  --color-border: #d6dee5;
+  --color-nav-border: #cfd8e3;
+  --color-success: #15803d;
+  --red: #0d6aa3;
+  --color-text-on-light: #2d2d2d;
+  --color-text-on-dark: #ffffff;
+  --mkt-primary-dark: #04263d;
+  --crm-text-muted-on-light: #333333;
+}
+
+html, body {
+  font-family: var(--font-body) !important;
+}
+
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: var(--font-heading) !important;
+}
+
+.btn,
+button,
+input[type="button"],
+input[type="submit"],
+a.btn,
+[class*="btn-"] {
+  border-radius: var(--crm-theme-btn-radius) !important;
+  font-weight: 600 !important;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease !important;
+}
+
+/* Universal solid primary CTA buttons */
+.btn-primary,
+.btn-header,
+.btn-appointment,
+.btn-hero-primary,
+.btn-hero-card,
+.btn-cta-primary,
+.btn-schedule,
+.btn-portal,
+.btn-marketing-primary,
+.btn-marketing-accent,
+.portal-button,
+.btn-modal-custom,
+.qa-custom-btn,
+.card.stores-cta .btn,
+.card.portal-cta .portal-button,
+.bg-primary {
+  background-color: var(--crm-theme-button) !important;
+  border: 1px solid var(--crm-theme-button) !important;
+  color: var(--crm-btn-solid-text) !important;
+}
+
+.btn-primary:hover,
+.btn-header:hover,
+.btn-appointment:hover,
+.btn-hero-primary:hover,
+.btn-hero-card:hover,
+.btn-cta-primary:hover,
+.btn-schedule:hover,
+.btn-portal:hover,
+.btn-marketing-primary:hover,
+.btn-marketing-accent:hover,
+.portal-button:hover,
+.btn-modal-custom:hover,
+.qa-custom-btn:hover,
+.card.stores-cta .btn:hover,
+.card.portal-cta .portal-button:hover {
+  background-color: var(--crm-theme-button-hover) !important;
+  border-color: var(--crm-theme-button-hover) !important;
+  color: var(--crm-btn-solid-text) !important;
+}
+
+/* Override Bootstrap text-dark on solid brand buttons */
+.btn-primary.text-dark,
+.btn-header.text-dark,
+.btn-hero-card.text-dark,
+.btn-cta-primary.text-dark,
+.portal-button.text-dark,
+a.btn.text-dark[class*="btn-"] {
+  color: var(--crm-btn-solid-text) !important;
+}
+
+/* Universal outline / secondary buttons */
+.btn-patient-login,
+.btn-cta-outline,
+.btn-outline-primary {
+  background-color: #ffffff !important;
+  color: var(--crm-btn-outline-text) !important;
+  border: 1px solid var(--crm-theme-primary) !important;
+}
+
+.btn-patient-login:hover,
+.btn-cta-outline:hover,
+.btn-outline-primary:hover {
+  background-color: var(--crm-btn-outline-hover-bg) !important;
+  color: var(--crm-btn-outline-hover-text) !important;
+  border-color: var(--crm-theme-primary) !important;
+}
+
+/* Section backgrounds derived from brand */
+.hero-section {
+  background: linear-gradient(135deg, #04263d 0%, #0a4d7c 55%, #0d6aa3 140%) !important;
+}
+
+.hero-label {
+  background: rgba(255, 255, 255, 0.95) !important;
+  color: var(--crm-theme-primary-dark) !important;
+}
+
+.hero-title,
+.hero-title-accent {
+  color: #ffffff !important;
+}
+
+.hero-desc {
+  color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Dark band sections — always readable white text */
+.insurance-section,
+.section-dark,
+.bg-dark-purple {
+  background-color: var(--crm-dark-surface) !important;
+  color: var(--crm-btn-solid-text) !important;
+}
+
+.insurance-section p,
+.insurance-section li,
+.insurance-title,
+.insurance-section .insurance-list li {
+  color: rgba(255, 255, 255, 0.92) !important;
+}
+
+/* Service / care cards — brand-tinted overlays for readable white titles */
+.care-card-overlay.pink {
+  background: linear-gradient(to top, rgba(0, 90, 148, 0.82), transparent 55%) !important;
+}
+.care-card-overlay.hot-pink {
+  background: linear-gradient(to top, rgba(10, 77, 124, 0.78), transparent 55%) !important;
+}
+.care-card-overlay.purple {
+  background: linear-gradient(to top, rgba(240, 88, 96, 0.72), transparent 55%) !important;
+}
+
+.care-card-content h3 {
+  color: #ffffff !important;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+.text-primary,
+.navbar-brand,
+a.nav-link:hover,
+.service-link,
+.portal-link {
+  color: var(--crm-theme-primary) !important;
+}
+
+a {
+  color: var(--crm-theme-primary);
+}
+
+a:hover:not(.btn):not([class*="btn-"]) {
+  color: var(--crm-theme-primary-dark);
+}
+
+.service-icon i,
+.care-card-icon,
+[class*="accent"] {
+  color: var(--crm-theme-primary);
+}
+
+/* Style 2 — Patient Login solid CTA */
+.btn-login {
+  background-color: var(--crm-dark-surface) !important;
+  background: var(--crm-dark-surface) !important;
+  color: var(--crm-btn-solid-text) !important;
+  border: 1px solid var(--crm-dark-surface) !important;
+  text-decoration: none !important;
+}
+
+.btn-login:hover,
+.btn-login:focus,
+.btn-login:active {
+  background-color: var(--crm-theme-button-hover) !important;
+  background: var(--crm-theme-button-hover) !important;
+  color: var(--crm-btn-solid-text) !important;
+  border-color: var(--crm-theme-button-hover) !important;
+  opacity: 1 !important;
+}
+
+/* Uploaded logos — transparent background for PNG/WebP */
+img.brand-logo.main-logo,
+.navbar-brand img.main-logo,
+.footer-logo img.main-logo,
+.navbar-brand img.brand-logo,
+.footer-logo img.brand-logo {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+#footer,
+.medicbuilding {
+  background: var(--crm-dark-surface) !important;
+  color: var(--crm-btn-solid-text) !important;
+}
+
+#footer .footer-link li a,
+#footer .footer-link li a:visited,
+.footer-link li a,
+.footer-link li a:visited {
+  color: var(--crm-btn-solid-text) !important;
+}
+
+#testimonials {
+  background: var(--color-surface-muted) !important;
+}
+
+/*
+ * Patient-tools + FAQ iframe hosts load healow CDN pages with black text.
+ * Always keep these panels translucent-light (brand dark @ ~7% opacity).
+ */
+#patient-tools .patient-tools-tab #p-tools-Content,
+#patient-tools #p-tools-Content,
+#patient-tools .tab-pane,
+#faqs .faq-iframe-wrapper,
+#faqs .tab-content {
+  background: #04263d12 !important;
+  background-color: #04263d12 !important;
+  color: #2d2d2d !important;
+}
+
+#patient-tools .patient-tools-iframe-wrap {
+  background: transparent !important;
+  background-color: transparent !important;
+}
+
+/* Practice unique code — always darkened primary on the white code panel */
+.practice-code-right .code,
+.practice-code .code,
+.practice-code-bg .code,
+.ai-practice-code,
+span.code.ai-practice-code,
+strong.ai-practice-code {
+  color: #04263d !important;
+}
+
+.practice-code-right .code,
+.practice-code .code,
+.practice-code-bg .code {
+  border-color: #04263d !important;
+}
+
+#meet-doctor {
+  background: var(--color-surface-alt) !important;
+}
+
+.specialities-bx {
+  background: var(--color-surface-tint) !important;
+}
+
+.card.stores-cta .card-body {
+  background: var(--brand-teal) !important;
+}
+
+.services-tabs a.nav-link.active,
+.nav-tabs .nav-link.active,
+#faqs .nav-tabs .nav-link.active {
+  background-color: var(--brand-teal) !important;
+  border-color: var(--brand-teal) !important;
+  color: #2d2d2d !important;
+}
+
+#quick-action .btn {
+  background-color: var(--color-primary) !important;
+  border-color: var(--color-surface) !important;
+  color: #ffffff !important;
+}
+
+#quick-action .btn i {
+  color: #ffffff !important;
+}
+
+div#insurance-providers h5 {
+  color: #ffffff !important;
+}
+
+.practice-name {
+  color: var(--brand-teal) !important;
+}
+
+.hero-card-icon.red,
+.hero-card-icon.orange,
+.hero-card-icon.purple,
+.hero-card-icon.teal,
+.hero-card-icon {
+  background: var(--hero-card-icon-bg) !important;
+  color: var(--crm-btn-solid-text) !important;
+}
+
+#footer h4,
+#footer h3,
+#footer h2,
+.main-footer h4,
+.footer-heading {
+  color: var(--footer-heading-color) !important;
+}
+
+#footer .social-icons a,
+.main-footer .social-icons a {
+  color: var(--social-icon-color) !important;
+  background: #ffffff !important;
+}
+
+#footer .social-icons a:hover,
+.main-footer .social-icons a:hover {
+  color: #ffffff !important;
+  background: var(--crm-theme-primary) !important;
+}
+
+/* WCAG 2.1 AA — section text/background pairs */
+.services-section { color: #2d2d2d !important }
+.service-card { color: #2d2d2d !important }
+.service-card h3 { color: #2d2d2d !important }
+.service-card p { color: #2d2d2d !important }
+.testimonials-section { color: #2d2d2d !important }
+.testimonial-card { color: #2d2d2d !important }
+#testimonials { color: #2d2d2d !important }
+#testimonials p { color: #2d2d2d !important }
+#meet-doctor { color: #2d2d2d !important }
+#meet-doctor h4 { color: #2d2d2d !important }
+#meet-doctor p { color: #2d2d2d !important }
+.specialities-bx { color: #2d2d2d !important }
+#patient-portal { color: #2d2d2d !important }
+#patient-portal p { color: #2d2d2d !important }
+#patient-tools { color: #2d2d2d !important }
+#faqs .tab-content { color: #2d2d2d !important }
+.serve-card { color: #2d2d2d !important }
+.serve-card p { color: #2d2d2d !important }
+#imp-notice { color: #2d2d2d !important }
+#imp-notice small { color: #2d2d2d !important }
+.section-desc { color: #2d2d2d !important }
+.bx-highlight { color: #2d2d2d !important }
+.hero-section .section-title { color: #2d2d2d !important }
+.hero-desc { color: rgba(255, 255, 255, 0.95) !important }
+.services-section .section-title { color: #2d2d2d !important }
+.insurance-section { color: #ffffff !important }
+.insurance-section h2 { color: #ffffff !important }
+.insurance-section h3 { color: #ffffff !important }
+.insurance-title { color: #ffffff !important }
+.section-dark { color: #ffffff !important }
+.bg-dark-purple { color: #ffffff !important }
+#footer { color: #ffffff !important }
+#footer p { color: #ffffff !important }
+#footer h2 { color: #ffffff !important }
+#footer h3 { color: #ffffff !important }
+#footer h4 { color: #ffffff !important }
+#footer h5 { color: #ffffff !important }
+#footer li { color: #ffffff !important }
+.main-footer { color: #ffffff !important }
+.main-footer h4 { color: #ffffff !important }
+.main-footer h3 { color: #ffffff !important }
+.main-footer p { color: #ffffff !important }
+.footer-heading { color: #ffffff !important }
+.footer-desc { color: #ffffff !important }
+.footer-logo .logo-text { color: #ffffff !important }
+.medicbuilding { color: #ffffff !important }
+.local-panel { color: #ffffff !important }
+.local-panel h4 { color: #ffffff !important }
+.local-panel h3 { color: #ffffff !important }
+.local-panel p { color: #ffffff !important }
+.local-panel td { color: #ffffff !important }
+.local-panel th { color: #ffffff !important }
+.footer-section { color: #ffffff !important }
+.site-footer { color: #ffffff !important }
+.insurance-section p { color: rgba(255, 255, 255, 0.92) !important }
+.insurance-section li { color: rgba(255, 255, 255, 0.92) !important }
+.insurance-section .insurance-list li { color: rgba(255, 255, 255, 0.92) !important }
+#footer .text-muted { color: rgba(255, 255, 255, 0.92) !important }
+.local-panel .text-muted { color: rgba(255, 255, 255, 0.92) !important }
+#footer a { color: #ffffff !important }
+#footer .footer-link li a { color: #ffffff !important }
+.footer-link li a { color: #ffffff !important }
+.footer-link li a:visited { color: #ffffff !important }
+.main-footer ul li a { color: #ffffff !important }
+.footer-links a { color: #ffffff !important }
+.footer-links a:visited { color: #ffffff !important }
+.insurance-section a { color: #ffffff !important }
+.local-panel a { color: #ffffff !important }
+#footer .social-icons a { color: #0a4d7c !important; background: #ffffff !important }
+.main-footer .social-icons a { color: #0a4d7c !important; background: #ffffff !important }
+footer .social-icons a { color: #0a4d7c !important; background: #ffffff !important }
+#footer .social-icons a:hover { color: #ffffff !important; background: #0a4d7c !important }
+.main-footer .social-icons a:hover { color: #ffffff !important; background: #0a4d7c !important }
+footer .social-icons a:hover { color: #ffffff !important; background: #0a4d7c !important }
+.contact-list li i { color: #ffffff !important }
+#footer .contact-list i { color: #ffffff !important }
+.main-footer .contact-list i { color: #ffffff !important }
+.hero-card-icon { color: #ffffff !important; background: #0a4d7c !important }
+.hero-card-icon.red { color: #ffffff !important; background: #0a4d7c !important }
+.hero-card-icon.orange { color: #ffffff !important; background: #0a4d7c !important }
+.hero-card-icon.purple { color: #ffffff !important; background: #0a4d7c !important }
+.hero-card-icon.teal { color: #ffffff !important; background: #0a4d7c !important }
+.hero-card-icon i { color: #ffffff !important; background: #0a4d7c !important }
+#footer a:hover { color: #ffffff !important; opacity: 0.88 }
+.footer-link li a:hover { color: #ffffff !important; opacity: 0.88 }
+.insurance-section a:hover { color: #ffffff !important; opacity: 0.88 }
+.local-panel a:hover { color: #ffffff !important; opacity: 0.88 }
+.top-bar { color: #ffffff !important }
+.top-bar a { color: #ffffff !important }
+.top-bar span { color: #ffffff !important }
+.navbar-dark { color: #ffffff !important }
+.navbar-dark .nav-link { color: #ffffff !important }
+.navbar-dark .navbar-brand { color: #ffffff !important }
+#primary-nav { color: #ffffff !important }
+#primary-nav .nav-link { color: #ffffff !important }
+#primary-nav .navbar-brand { color: #ffffff !important }
+.hero-overlay { color: #ffffff !important }
+.hero-content { color: #ffffff !important }
+.hero-content h1 { color: #ffffff !important }
+.hero-content p { color: #ffffff !important }
+.hero-subtitle { color: #ffffff !important }
+.nav-tabs .nav-link.active { color: #2d2d2d !important }
+#faqs .nav-tabs .nav-link.active { color: #2d2d2d !important }
+.services-tabs a.nav-link.active { color: #2d2d2d !important }
+.card.stores-cta .card-body { color: #2d2d2d !important }
+.card.stores-cta .card-body p { color: #2d2d2d !important }
+.highlight-bx { color: #2d2d2d !important }
+.highlight-bx p { color: #2d2d2d !important }
+.portal-24-7-icon { color: #2d2d2d !important }
+.portal-24-7-icon .material-icons { color: #2d2d2d !important }
+.healow-steps-header { color: #2d2d2d !important }
+.healow-step-number { color: #2d2d2d !important }
+#quick-action .btn:hover { color: #2d2d2d !important }
+#quick-action .btn:focus { color: #2d2d2d !important }
+#quick-action .btn:active { color: #2d2d2d !important }
+#quick-action .btn:hover i { color: #2d2d2d !important }
+#quick-action .btn:focus i { color: #2d2d2d !important }
+#quick-action .btn:active i { color: #2d2d2d !important }
+#quick-action .btn { color: #ffffff !important }
+#quick-action .btn i { color: #ffffff !important }
+.portal-button-wrap .portal-button { color: #ffffff !important }
+.btn-marketing-primary { color: #ffffff !important }
+.btn-marketing-accent { color: #ffffff !important }
+.healow-download-btn { color: #ffffff !important }
+.marketing-cta-band { color: #ffffff !important }
+#patient-tools .nav-tabs .nav-link.active { color: #ffffff !important }
+#patient-tools .nav-tabs .nav-link.active i { color: #ffffff !important }
+#patient-tools .nav-tabs .nav-link { color: #2d2d2d !important }
+#faqs .nav-tabs .nav-link:not(.active) { color: #2d2d2d !important }
+.practice-code-right .code { color: #04263d !important }
+.practice-code .code { color: #04263d !important }
+.practice-code-bg .code { color: #04263d !important }
+.ai-practice-code { color: #04263d !important }
+span.code.ai-practice-code { color: #04263d !important }
+strong.ai-practice-code { color: #04263d !important }
+.section-title { color: #2d2d2d !important }
+.hero-title { color: #ffffff !important }
+.service-card h3 { color: #2d2d2d !important }
+.testimonial-card .testimonial-name { color: #2d2d2d !important }
+.services-section a:not(.btn):not(.nav-link) { color: #0a4d7c !important }
+#patient-portal a:not(.btn):not(.nav-link) { color: #0a4d7c !important }
+.hero-section a:not(.btn):not(.nav-link) { color: #0a4d7c !important }
+.service-link { color: #0a4d7c !important }
+.portal-link { color: #0a4d7c !important }
+div#insurance-providers h5 { color: #ffffff !important }
+#local-meet-doctors .material-icons { color: #ffffff !important }
+#local-socials a ion-icon { color: #ffffff !important }
+#local-socials a i.fa-brands { color: #ffffff !important }
+.practice-name { color: #2d2d2d !important }
+.serve-chip { color: #2d2d2d !important }
+.serve-chip:hover { color: #2d2d2d !important }

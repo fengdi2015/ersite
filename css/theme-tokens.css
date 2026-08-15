@@ -1,0 +1,66 @@
+/**
+ * Essential Rheumatology — darker blue brand palette (Mayo-inspired calm clinical tone)
+ */
+:root {
+  --color-button-solid: #0a4d7c;
+  --crm-theme-primary: #0a4d7c;
+  --crm-theme-secondary: #eef3f7;
+  --crm-theme-primary-dark: #063556;
+  --crm-theme-accent: #0a4d7c;
+
+  --color-primary: #0a4d7c;
+  --color-primary-dark: #063556;
+  --color-secondary: #04263d;
+  --color-accent: #0d6aa3;
+
+  --color-text: #1f2933;
+  --color-text-muted: #52606d;
+  --color-text-light: #627d98;
+  --color-surface: #ffffff;
+  --color-surface-muted: #f5f7fa;
+  --color-border: #d9e2ec;
+
+  --dark-purple: #04263d;
+  --dark-purple-gray: #063556;
+  --light-purple: #3d7eab;
+  --pink: #3d7eab;
+  --hot-pink: #0d6aa3;
+  --red: #0a4d7c;
+  --orange: #0d6aa3;
+  --blue: #0a4d7c;
+  --dark-blue: #04263d;
+  --teal: #0a4d7c;
+  --light-blue: #e8eef4;
+  --gray-600: var(--color-text);
+  --gray-500: var(--color-text-muted);
+  --gray-400: var(--color-text-light);
+  --gray-200: var(--color-border);
+  --gray-100: var(--color-surface-muted);
+  --white: var(--color-surface);
+
+  --mkt-primary: var(--color-primary-dark);
+  --mkt-primary-dark: #04263d;
+  --mkt-accent: #0a4d7c;
+  --mkt-accent-dark: #063556;
+  --mkt-text: #1f2933;
+  --mkt-text-muted: #52606d;
+  --mkt-link: #0a4d7c;
+  --mkt-check: #0a4d7c;
+  --mkt-bg-tab-inactive: #e9ecef;
+  --mkt-border: #dee2e6;
+  --mkt-healow-blue: #04263d;
+  --mkt-warm-accent: #0d6aa3;
+  --mkt-surface-alt: #04263d12;
+  --mkt-practice-code: #04263d;
+  --mkt-tab-text: #495057;
+  --mkt-surface: #ffffff;
+
+  --color-success: #15803d;
+  --color-primary-darker: #04263d;
+  --color-app-button: #0a4d7c;
+  --color-code-highlight: #fff4cc;
+  --color-nav-border: #cfd8e3;
+  --hero-card-icon-bg: #0a4d7c;
+  --footer-heading-color: #ffffff;
+  --social-icon-color: #0a4d7c;
+}

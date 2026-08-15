@@ -1,0 +1,11 @@
+/* CRM fallback image helpers */
+img.crm-fallback-image,
+img[data-crm-fallback="true"] {
+  object-fit: cover;
+  background-color: #f4f6f8;
+}
+img.crm-fallback-image.crm-fallback-logo,
+img[data-crm-fallback-kind="logo"] {
+  object-fit: contain;
+  padding: 0.35rem;
+}
