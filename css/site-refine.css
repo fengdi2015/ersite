@@ -1,5 +1,5 @@
 /**
- * Essential Rheumatology â€” layout & visibility fixes
+ * Essential Rheumatology — layout & visibility fixes
  * Loads last to resolve alignment, contrast, and spacing issues.
  */
 
@@ -30,7 +30,7 @@ h1, h2, h3, h4, h5, h6,
   letter-spacing: -0.02em;
 }
 
-/* ========== Top bar â€” prevent crush / overlap ========== */
+/* ========== Top bar — prevent crush / overlap ========== */
 .top-bar {
   background: #04263d !important;
   color: #ffffff !important;
@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* ========== Hero â€” force readable white text ========== */
+/* ========== Hero — force readable white text ========== */
 .hero {
   position: relative !important;
   min-height: 330px !important;
@@ -566,7 +566,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* Conditions â€” equal-width CSS grid (fixes uneven columns) */
+/* Conditions — equal-width CSS grid (fixes uneven columns) */
 .conditions-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -726,7 +726,7 @@ h1, h2, h3, h4, h5, h6,
   }
 }
 
-/* ========== Marketing / tools â€” readable + aligned ========== */
+/* ========== Marketing / tools — readable + aligned ========== */
 #patient-portal,
 #healow-app,
 #healow-steps,
@@ -846,7 +846,7 @@ h1, h2, h3, h4, h5, h6,
   overflow: hidden;
 }
 
-/* ========== CTA â€” original card style ========== */
+/* ========== CTA — original card style ========== */
 .cta-banner {
   background: #f4f7fa !important;
   padding: 3.5rem 0 !important;
