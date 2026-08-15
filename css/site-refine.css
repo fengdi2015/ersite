@@ -1048,7 +1048,7 @@ h1, h2, h3, h4, h5, h6,
 /* Featured condition guides */
 .condition-feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1rem;
   margin: 2rem 0;
 }
@@ -1083,6 +1083,12 @@ h1, h2, h3, h4, h5, h6,
 .condition-feature-card a:hover,
 .condition-feature-card a:focus-visible {
   text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .condition-feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 767px) {
