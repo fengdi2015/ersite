@@ -111,6 +111,8 @@ h1, h2, h3, h4, h5, h6,
   background: #ffffff !important;
   box-shadow: 0 1px 0 #d9e2ec !important;
   padding: 0.65rem 0 !important;
+  position: relative !important;
+  top: auto !important;
 }
 
 .main-nav .container {
@@ -207,6 +209,33 @@ h1, h2, h3, h4, h5, h6,
 .copy-phone-notice.visible { opacity: 1; transform: translate(-50%, 0); }
 
 @media (max-width: 991px) {
+  .main-nav-header {
+    max-height: 100dvh;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+  }
+
+  .main-nav {
+    padding: 0.25rem 0 !important;
+  }
+
+  .main-nav .navbar-brand img,
+  .main-nav .brand-logo,
+  .navbar-brand .main-logo {
+    max-width: 170px !important;
+    max-height: 56px !important;
+  }
+
+  .main-nav .navbar-toggler {
+    flex: 0 0 auto;
+    margin-left: auto;
+  }
+
+  .main-nav .navbar-collapse {
+    flex-basis: 100%;
+    width: 100%;
+  }
+
   .nav-buttons {
     width: 100%;
     margin-top: 0.75rem;
