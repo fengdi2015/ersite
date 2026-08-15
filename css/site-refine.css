@@ -280,6 +280,7 @@ h1, h2, h3, h4, h5, h6,
   justify-content: center;
   gap: 0.45rem;
   min-height: 48px;
+  width: 172px;
   padding: 0.7rem 1.2rem;
   font-weight: 600;
   font-size: 0.9375rem;
@@ -288,6 +289,21 @@ h1, h2, h3, h4, h5, h6,
   border-radius: 4px !important;
   box-sizing: border-box;
   cursor: pointer;
+}
+
+@media (max-width: 767.98px) {
+  .hero-actions {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.75rem;
+    width: 100%;
+  }
+
+  .hero-actions .btn-hero-primary,
+  .hero-actions .btn-hero-secondary,
+  .hero-actions .btn-hero-tool {
+    width: 100%;
+  }
 }
 
 .hero-actions .btn-hero-primary {
