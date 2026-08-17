@@ -38,8 +38,10 @@ $(document).ready(function() {
         const target = $(href);
         if (target.length) {
             e.preventDefault();
+            const stickyHeaderHeight = $('.main-nav-header').outerHeight() || 80;
+            const anchorClearance = href === '#location-map' ? 40 : 16;
             $('html, body').stop().animate({
-                scrollTop: target.offset().top - 80
+                scrollTop: Math.max(0, target.offset().top - stickyHeaderHeight - anchorClearance)
             }, 600);
         }
     });
