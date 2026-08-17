@@ -109,7 +109,7 @@
             <div class="row align-items-center">
                 <div class="col-lg-7 col-md-12">
                     <div class="top-bar-left">
-                        <a class="top-item location-link" href="https://maps.app.goo.gl/zomWSFjFLLDrqSjd9" target="_blank" rel="noopener noreferrer" aria-label="Open Essential Rheumatology location in Google Maps"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>40 Dale Road, Ste 203, Avon, CT 06001</a>
+                        <a class="top-item location-link" href="#location-map" aria-label="View the Essential Rheumatology location map"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>40 Dale Road, Ste 203, Avon, CT 06001</a>
                         <span class="sep" aria-hidden="true">|</span>
                         <span class="top-item"><i class="fas fa-clock"></i>Mon–Fri, 8:00 AM–5:00 PM</span>
                     </div>
@@ -144,11 +144,16 @@
                 </ul>
                 <div class="nav-buttons">
                     <span class="btn btn-login patient-login-disabled" aria-disabled="true" title="Patient portal login is not yet available">Patient Login</span>
-                    <a href="tel:+18603256908" class="btn btn-appointment schedule-action">Call to Schedule</a>
                 </div>
             </div>
         </div>
     </nav>
+    <!-- Opening announcement is ready for a future release; remove `hidden` to display it. -->
+    <div class="opening-announcement" aria-label="Clinic opening announcement" hidden>
+        <div class="opening-announcement-track">
+            <span>Welcome, patients! Essential Rheumatology is opening soon. Call <a href="tel:+18603256908" aria-label="Call Essential Rheumatology at 860-325-6908">860-325-6908</a> to schedule your appointment before our official opening.</span>
+        </div>
+    </div>
     </header>
 
     <!-- AI: SECTION hero (code: home/hero) — EDITABLE. h1 lines, description, hero background. -->
@@ -156,13 +161,31 @@
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <div class="container">
-                <h1 class="hero-title"><span class="hero-line">Compassionate, Comprehensive, Cutting-edge Care</span></h1>
-                <p class="hero-desc">Essential Rheumatology is a rheumatology practice in Avon, Connecticut, providing comprehensive diagnosis and treatment for autoimmune, rheumatic, and musculoskeletal diseases.</p>
-                <div class="hero-actions">
-                    <a href="tel:+18603256908" class="btn-hero-primary schedule-action">Call to Schedule</a>
-                    <span class="btn-hero-secondary patient-login-disabled" aria-disabled="true" title="Patient portal login is not yet available">Patient Portal Login</span>
-                    <span class="btn-hero-tool billing-disabled" aria-disabled="true" title="Online bill payment is not yet available">Pay Your Bill</span>
-                    <a href="#patient-tools" class="btn-hero-tool">Easy Check-in</a>
+                <div class="hero-layout">
+                    <div class="hero-copy">
+                        <h1 class="hero-title"><span class="hero-line">Compassionate, comprehensive rheumatology care</span></h1>
+                        <p class="hero-desc">Evidence-based care for autoimmune, rheumatic, and joint disorders in Avon, Connecticut.</p>
+                        <div class="hero-actions">
+                            <span class="btn-hero-primary billing-disabled" aria-disabled="true" title="Online bill payment is not yet available">Pay Your Bill</span>
+                            <a href="#patient-tools" class="btn-hero-tool">Easy Check-in</a>
+                        </div>
+                    </div>
+                    <aside class="schedule-inline" id="cta" data-crm-section="cta" aria-labelledby="schedule-title">
+                        <div class="schedule-inline-copy">
+                            <h2 id="schedule-title">Ready to schedule a visit?</h2>
+                            <p>Call our Avon office at <strong>860-325-6908</strong> for an evaluation and personalized rheumatology care.</p>
+                            <details class="schedule-prep">
+                                <summary>What should I prepare?</summary>
+                                <ul>
+                                    <li>Photo ID and insurance card</li>
+                                    <li>Medication and allergy list</li>
+                                    <li>Referral, if required</li>
+                                    <li>Relevant medical records</li>
+                                </ul>
+                            </details>
+                        </div>
+                        <a href="tel:+18603256908" class="schedule-inline-button call-action" data-phone="860-325-6908" aria-label="Call 860-325-6908 to schedule"><span>Call to Schedule</span><span class="schedule-phone-number">860-325-6908</span></a>
+                    </aside>
                 </div>
             </div>
         </div>
@@ -179,7 +202,7 @@
                     <div class="strip-item"><i class="fas fa-phone-alt"></i><span><a href="tel:+18603256908">860-325-6908</a> · Fax: 860-325-6508</span></div>
                 </div>
                 <div class="col-md-4">
-                    <div class="strip-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><a class="location-link" href="https://maps.app.goo.gl/zomWSFjFLLDrqSjd9" target="_blank" rel="noopener noreferrer" aria-label="Open Essential Rheumatology location in Google Maps">40 Dale Road, Ste 203, Avon, CT 06001</a></div>
+                    <div class="strip-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><a class="location-link" href="#location-map" aria-label="View the Essential Rheumatology location map">40 Dale Road, Ste 203, Avon, CT 06001</a></div>
                 </div>
             </div>
         </div>
@@ -203,13 +226,10 @@
                     </ul>
                 </div>
                 <div class="service-visual">
-                    <img src="images/care-1.webp" alt="Rheumatology consultation at Essential Rheumatology" width="800" height="600" loading="lazy">
+                    <div class="service-map-frame" id="location-map">
+                        <iframe src="https://www.google.com/maps?q=Essential+Rheumatology+LLC%2C+40+Dale+Road%2C+Avon%2C+CT+06001&amp;ll=41.8124785%2C-72.8644451&amp;z=16&amp;output=embed" title="Map centered on Essential Rheumatology LLC with surrounding roads in Avon, Connecticut" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+                    </div>
                 </div>
-            </div>
-            <div class="featured-care">
-                <a href="#services"><img src="images/care-2.webp" alt="Autoimmune disease care" width="800" height="600" loading="lazy"><span>Autoimmune disease care</span></a>
-                <a href="#services"><img src="images/care-3.webp" alt="Joint pain and inflammation" width="800" height="600" loading="lazy"><span>Joint pain &amp; inflammation</span></a>
-                <a href="#services"><img src="images/care-5.webp" alt="Ongoing disease monitoring" width="800" height="600" loading="lazy"><span>Ongoing disease monitoring</span></a>
             </div>
         </div>
     </section>
@@ -276,7 +296,7 @@
             <h2 class="section-title">Our Providers</h2>
             <p class="section-desc">Experienced clinicians focused on thoughtful diagnosis and long-term partnership in care.</p>
             <div class="provider-card">
-                <img src="images/care-6.webp" alt="Dr. Yousong Wang" width="220" height="220" loading="lazy">
+                <img src="images/yousong-wang.jpg" alt="Dr. Yousong Wang" width="220" height="220" loading="lazy">
                 <div>
                     <h3>Dr. Yousong Wang</h3>
                     <div class="role">Board-Certified Rheumatologist &amp; Internist</div>
@@ -285,7 +305,7 @@
                 </div>
             </div>
             <div class="provider-card">
-                <img src="images/care-4.webp" alt="Duojia Shen, APRN" width="220" height="220" loading="lazy">
+                <img src="images/duojia-shen.jpg" alt="Duojia Shen, APRN" width="220" height="220" loading="lazy">
                 <div>
                     <h3>Duojia Shen, APRN</h3>
                     <div class="role">Advanced Practice Registered Nurse &amp; Certified Nurse Practitioner</div>
@@ -695,27 +715,6 @@
       </section>
 
     <!-- AI: SECTION cta — EDITABLE. Headline, description, CTA button text. -->
-    <section class="cta-banner" id="cta" data-crm-section="cta">
-        <div class="container">
-            <div class="cta-content">
-                <div class="cta-text">
-                    <h2>Ready to schedule a visit?</h2>
-                    <p>Call our Avon office at <a href="tel:+18603256908" class="cta-phone call-action" data-phone="860-325-6908">860-325-6908</a> to request an appointment for evaluation and personalized rheumatology care.</p>
-                    <div class="visit-prep">
-                        <h3>Before your visit, please prepare:</h3>
-                        <ul>
-                            <li>Photo ID and insurance card</li>
-                            <li>Current medication and allergy list</li>
-                            <li>Referral, if required by your insurance</li>
-                            <li>Relevant recent lab results, imaging, or medical records</li>
-                        </ul>
-                    </div>
-                </div>
-                <a href="tel:+18603256908" class="btn-cta call-action" data-phone="860-325-6908">Call to Schedule</a>
-            </div>
-        </div>
-    </section>
-
     <!-- AI: SECTION footer — EDITABLE. Brand, description, links, contact, copyright. -->
     <footer id="footer" class="main-footer" data-crm-section="footer">
         <span id="contact" class="visually-hidden" aria-hidden="true"></span>
@@ -727,7 +726,6 @@
                     <div class="social-icons">
                         <a href="https://www.facebook.com/EssentialRheumatology/" target="_blank" rel="noopener noreferrer" aria-label="Visit Essential Rheumatology on Facebook" title="Facebook"><i class="fab fa-facebook-f" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/essentialrheumatology/" target="_blank" rel="noopener noreferrer" aria-label="Visit Essential Rheumatology on Instagram" title="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
                         <a href="https://www.linkedin.com/company/essentialrheumatology/" target="_blank" rel="noopener noreferrer" aria-label="Visit Essential Rheumatology on LinkedIn" title="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                     </div>
                 </div>
@@ -753,7 +751,7 @@
                 <div class="col-lg-4 col-md-4">
                     <h4>Contact Us</h4>
                     <ul class="contact-list">
-                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <a class="location-link" href="https://maps.app.goo.gl/zomWSFjFLLDrqSjd9" target="_blank" rel="noopener noreferrer" aria-label="Open Essential Rheumatology location in Google Maps">40 Dale Road, Ste 203, Avon, CT 06001</a></li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <a class="location-link" href="#location-map" aria-label="View the Essential Rheumatology location map">40 Dale Road, Ste 203, Avon, CT 06001</a></li>
                         <li><i class="fas fa-phone-alt"></i> <a href="tel:+18603256908">860-325-6908</a></li>
                         <li><i class="fas fa-fax"></i> Fax: 860-325-6508</li>
                         <li><i class="fas fa-clock"></i> Mon–Fri, 8:00 AM – 5:00 PM</li>
