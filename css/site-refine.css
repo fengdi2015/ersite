@@ -218,6 +218,10 @@ h1, h2, h3, h4, h5, h6,
   flex-shrink: 0;
 }
 
+.nav-buttons[hidden] {
+  display: none !important;
+}
+
 .nav-buttons .btn-login,
 .nav-buttons .btn-appointment {
   padding: 0.55rem 1rem !important;
@@ -391,6 +395,22 @@ h1, h2, h3, h4, h5, h6,
   margin-top: 1.15rem;
 }
 
+.hero-content p.portal-redirect-note {
+  max-width: none;
+  margin: 0.65rem 0 0 !important;
+  color: rgba(255, 255, 255, 0.88) !important;
+  -webkit-text-fill-color: rgba(255, 255, 255, 0.88) !important;
+  font-size: 0.75rem !important;
+  line-height: 1.4 !important;
+  white-space: nowrap;
+}
+
+@media (max-width: 767.98px) {
+  .hero-content p.portal-redirect-note {
+    white-space: normal;
+  }
+}
+
 .hero-actions .btn-hero-primary,
 .hero-actions .btn-hero-secondary,
 .hero-actions .btn-hero-tool {
@@ -492,6 +512,8 @@ h1, h2, h3, h4, h5, h6,
 
 /* ========== Clinic strip ========== */
 .clinic-strip {
+  position: relative;
+  z-index: 3;
   background: #04263d !important;
   color: #ffffff !important;
   padding: 0.72rem 0 !important;
@@ -889,6 +911,20 @@ h1, h2, h3, h4, h5, h6,
   border: 1px solid #d9e2ec !important;
   border-radius: 6px !important;
   overflow: hidden;
+}
+
+#patient-portal .portal-cta-title {
+  margin: 0 0 0.4rem;
+  color: #04263d;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+#patient-portal .portal-cta-description {
+  margin: 0 0 1rem;
+  color: #52606d !important;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 #healow-app .stores-cta .card-body {
