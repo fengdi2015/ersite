@@ -33,6 +33,10 @@ $(document).ready(function() {
 
     // Smooth scroll for anchor links
     $('a[href^="#"]').on('click', function(e) {
+        // Bootstrap tab links also use hash targets. Let Bootstrap handle them
+        // without scrolling the active panel underneath the sticky header.
+        if (this.matches('[data-bs-toggle="tab"], [data-toggle="tab"]')) return;
+
         const href = this.getAttribute('href');
         if (href === '#') return;
         const target = $(href);
