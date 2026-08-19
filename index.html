@@ -107,14 +107,19 @@
     <div id="topbar" class="top-bar" data-crm-section="topbar">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-7 col-md-12">
+                <div class="col-lg-4 col-md-12">
                     <div class="top-bar-left">
                         <a class="top-item location-link" href="#location-map" aria-label="View the Essential Rheumatology location map"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>40 Dale Road, Ste 203, Avon, CT 06001</a>
                         <span class="sep" aria-hidden="true">|</span>
                         <span class="top-item"><i class="fas fa-clock"></i>Mon–Fri, 8:00 AM–5:00 PM</span>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-12">
+                <div class="col-lg-4 col-md-12">
+                    <div class="top-bar-center">
+                        <span class="top-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>175 Addison Rd, Windsor, CT 06095</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-12">
                     <div class="top-bar-right">
                         <span class="top-item"><i class="fas fa-phone-alt"></i>P:&nbsp;<a href="tel:+18603256908" class="call-action" data-phone="860-325-6908" aria-label="Call Essential Rheumatology at 860-325-6908">860-325-6908</a></span>
                         <span class="sep">|</span>
@@ -139,7 +144,7 @@
                     <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
                     <li class="nav-item"><a class="nav-link" href="#conditions">Conditions</a></li>
                     <li class="nav-item"><a class="nav-link" href="#providers">Providers</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#forms">Forms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="forms.html">Forms</a></li>
                     <li class="nav-item"><a class="nav-link" href="#patient-portal">Patient Tools</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
@@ -156,27 +161,6 @@
         </div>
     </div>
     </header>
-
-    <section class="mobile-patient-actions" aria-label="Patient quick actions">
-        <div class="mobile-action-grid">
-            <a class="mobile-action mobile-action-primary" href="tel:+18603256908" aria-label="Call Essential Rheumatology at 860-325-6908">
-                <i class="fas fa-phone-alt" aria-hidden="true"></i><span>Call</span>
-            </a>
-            <a class="mobile-action" href="https://www.google.com/maps/dir/?api=1&amp;destination=Essential%20Rheumatology%20LLC%2C%2040%20Dale%20Road%20Suite%20203%2C%20Avon%2C%20CT%2006001" target="_blank" rel="noopener noreferrer" aria-label="Get directions to Essential Rheumatology in Google Maps (opens in a new tab)">
-                <i class="fas fa-directions" aria-hidden="true"></i><span>Get Directions</span>
-            </a>
-            <a class="mobile-action" href="#cta" aria-label="Request an appointment">
-                <i class="fas fa-calendar-check" aria-hidden="true"></i><span>Request Appointment</span>
-            </a>
-            <a class="mobile-action" href="https://mycw260.ecwcloud.com/portal31476" target="_blank" rel="noopener noreferrer" aria-label="Open the secure Patient Portal in a new tab">
-                <i class="fas fa-user-circle" aria-hidden="true"></i><span>Patient Portal</span>
-            </a>
-        </div>
-        <div class="mobile-office-summary">
-            <a href="#location-map"><i class="fas fa-map-marker-alt" aria-hidden="true"></i>40 Dale Road, Ste 203, Avon</a>
-            <span><i class="fas fa-clock" aria-hidden="true"></i>Mon–Fri, 8 AM–5 PM</span>
-        </div>
-    </section>
 
     <!-- AI: SECTION hero (code: home/hero) — EDITABLE. h1 lines, description, hero background. -->
     <section class="hero" id="home" data-crm-section="hero">
@@ -225,7 +209,7 @@
                     <div class="strip-item"><i class="fas fa-phone-alt"></i><span><a href="tel:+18603256908">860-325-6908</a> · Fax: 860-325-6508</span></div>
                 </div>
                 <div class="col-md-4">
-                    <div class="strip-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><a class="location-link" href="#location-map" aria-label="View the Essential Rheumatology location map">40 Dale Road, Ste 203, Avon, CT 06001</a></div>
+                    <div class="strip-item"><i class="fas fa-map-marker-alt" aria-hidden="true"></i><span class="strip-addresses"><a class="location-link" href="#location-map" aria-label="View the Essential Rheumatology location map">40 Dale Road, Ste 203, Avon, CT 06001</a><span>175 Addison Rd, Windsor, CT 06095</span></span></div>
                 </div>
             </div>
         </div>
@@ -367,7 +351,7 @@
         </div>
     </section>
 
-    <section class="er-section alt" id="forms" data-crm-section="forms">
+    <section class="er-section alt" id="forms" data-crm-section="forms" hidden>
         <div class="container">
             <div class="forms-layout">
                 <div>
@@ -875,7 +859,7 @@
                         <li><a href="#services">Services</a></li>
                         <li><a href="#conditions">Conditions</a></li>
                         <li><a href="#providers">Providers</a></li>
-                        <li><a href="#forms">Forms</a></li>
+                        <li><a href="forms.html">Forms</a></li>
                         <li><a href="#insurance">Insurance</a></li>
                     </ul>
                 </div>
@@ -892,6 +876,7 @@
                     <h4>Contact Us</h4>
                     <ul class="contact-list">
                         <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> <a class="location-link" href="#location-map" aria-label="View the Essential Rheumatology location map">40 Dale Road, Ste 203, Avon, CT 06001</a></li>
+                        <li><i class="fas fa-map-marker-alt" aria-hidden="true"></i> 175 Addison Rd, Windsor, CT 06095</li>
                         <li><i class="fas fa-phone-alt"></i> <a href="tel:+18603256908">860-325-6908</a></li>
                         <li><i class="fas fa-fax"></i> Fax: 860-325-6508</li>
                         <li><i class="fas fa-clock"></i> Mon–Fri, 8:00 AM – 5:00 PM</li>
@@ -909,11 +894,6 @@
         <i class="fas fa-chevron-up"></i>
     </button>
     <div id="copyPhoneNotice" class="copy-phone-notice" role="status" aria-live="polite">Phone number copied: 860-325-6908</div>
-
-    <nav class="mobile-sticky-actions" aria-label="Mobile contact shortcuts">
-        <a href="tel:+18603256908" aria-label="Call Essential Rheumatology at 860-325-6908"><i class="fas fa-phone-alt" aria-hidden="true"></i><span>Call</span></a>
-        <a href="https://mycw260.ecwcloud.com/portal31476" target="_blank" rel="noopener noreferrer" aria-label="Open the secure Patient Portal in a new tab"><i class="fas fa-user-circle" aria-hidden="true"></i><span>Portal</span></a>
-    </nav>
 
     <!-- jQuery -->
     <script src="vendors/jquery/jquery-3.7.1.min.js"></script>
