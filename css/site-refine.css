@@ -1456,3 +1456,183 @@ h1, h2, h3, h4, h5, h6,
 .provider-profile-link:focus-visible {
   text-decoration: underline;
 }
+
+/* Mobile patient-first navigation and quick actions */
+.mobile-patient-actions,
+.mobile-sticky-actions {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: clip;
+  }
+
+  body {
+    padding-bottom: calc(68px + env(safe-area-inset-bottom));
+  }
+
+  .top-bar {
+    display: none;
+  }
+
+  .main-nav-header {
+    overflow: visible;
+  }
+
+  .main-nav {
+    min-height: 64px;
+  }
+
+  .main-nav .navbar-brand img,
+  .main-nav .brand-logo,
+  .navbar-brand .main-logo {
+    max-height: 50px !important;
+    max-width: 145px !important;
+  }
+
+  .main-nav .navbar-toggler {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+  }
+
+  .main-nav .nav-link {
+    display: flex;
+    align-items: center;
+    min-height: 48px;
+    padding: 0.75rem 0.25rem !important;
+    font-size: 1rem !important;
+  }
+
+  .mobile-patient-actions {
+    display: block;
+    padding: 0.85rem 1rem 0.75rem;
+    background: #f3f8fb;
+    border-bottom: 1px solid #d9e4ec;
+  }
+
+  .mobile-action-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.65rem;
+  }
+
+  .mobile-action {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    min-height: 54px;
+    padding: 0.7rem 0.55rem;
+    border: 1px solid #0a4d7c;
+    border-radius: 7px;
+    background: #ffffff;
+    color: #0a4d7c;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .mobile-action-primary {
+    background: #0a4d7c;
+    color: #ffffff;
+  }
+
+  .mobile-office-summary {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.35rem 1rem;
+    margin-top: 0.7rem;
+    color: #334e68;
+    font-size: 1rem;
+    line-height: 1.45;
+    text-align: center;
+  }
+
+  .mobile-office-summary a {
+    color: inherit;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
+  }
+
+  .mobile-office-summary i {
+    margin-right: 0.35rem;
+    color: #0a4d7c;
+  }
+
+  .mobile-sticky-actions {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 64px;
+    padding-bottom: env(safe-area-inset-bottom);
+    background: #ffffff;
+    border-top: 1px solid #cbd5e1;
+    box-shadow: 0 -5px 18px rgba(4, 38, 61, 0.14);
+  }
+
+  .mobile-sticky-actions a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-height: 64px;
+    color: #ffffff;
+    background: #0a4d7c;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .mobile-sticky-actions a + a {
+    background: #04263d;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .hero p,
+  .er-section p,
+  .clinic-strip,
+  .main-footer p,
+  .main-footer li,
+  .main-footer a,
+  .form-table,
+  .form-table a {
+    font-size: 1rem !important;
+    line-height: 1.55;
+  }
+
+  .form-table td {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+    padding: 0.8rem;
+  }
+
+  .form-table td::before {
+    font-size: 0.8rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .back-to-top {
+    bottom: calc(78px + env(safe-area-inset-bottom)) !important;
+  }
+}
