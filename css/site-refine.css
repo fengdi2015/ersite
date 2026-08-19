@@ -1008,6 +1008,13 @@ h1, h2, h3, h4, h5, h6,
   align-items: start;
 }
 
+@media (min-width: 992px) {
+  #forms .section-desc {
+    max-width: none;
+    white-space: nowrap;
+  }
+}
+
 @media (max-width: 767px) {
   #forms .forms-layout {
     grid-template-columns: 1fr;
