@@ -648,6 +648,51 @@ h1, h2, h3, h4, h5, h6,
   border-bottom: 0;
 }
 
+.form-download-link,
+.form-request-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+
+.form-download-link {
+  color: #163a59;
+  text-decoration: none;
+}
+
+.form-download-link:hover,
+.form-download-link:focus-visible {
+  color: #0a4d7c;
+  text-decoration: underline;
+}
+
+.form-download-meta,
+.form-request-meta {
+  flex: 0 0 auto;
+  font-size: 0.75rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.form-download-meta {
+  color: #0a4d7c;
+}
+
+.form-request-meta {
+  color: #6b7280;
+}
+
+@media (max-width: 575px) {
+  .form-download-link,
+  .form-request-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.2rem;
+  }
+}
+
 .service-list li::before,
 .condition-list li::before,
 .form-list li::before {
