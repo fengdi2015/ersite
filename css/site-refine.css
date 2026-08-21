@@ -203,7 +203,7 @@ h1, h2, h3, h4, h5, h6,
 
 /* Opening announcement banner */
 .opening-announcement {
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
@@ -218,16 +218,12 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.4;
 }
 
-body {
-  padding-top: calc(var(--opening-announcement-height, 0px) + var(--top-contact-height, 0px));
-}
-
 .main-nav-header {
   top: calc(var(--opening-announcement-height, 0px) + var(--top-contact-height, 0px));
 }
 
 .top-bar {
-  position: fixed !important;
+  position: sticky !important;
   top: var(--opening-announcement-height, 0px);
   left: 0;
   right: 0;
