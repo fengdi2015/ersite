@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     // Mobile navbar collapse on link click
     $('.main-nav .nav-link').on('click', function() {
-        if ($(window).width() < 992) {
+        if ($(window).width() < 1200) {
             $('.navbar-collapse').collapse('hide');
         }
     });
