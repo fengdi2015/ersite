@@ -149,53 +149,131 @@ h1, h2, h3, h4, h5, h6,
 
 /* Opening announcement banner */
 .opening-announcement {
-  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1200;
   width: 100%;
   background: #0a4d7c;
   color: #ffffff;
   border-top: 1px solid rgba(255, 255, 255, 0.18);
-  padding: 0.55rem 0;
+  padding: 0.55rem 1rem;
   font-size: 0.92rem;
   font-weight: 600;
   line-height: 1.4;
 }
 
+body {
+  padding-top: calc(var(--opening-announcement-height, 0px) + var(--top-contact-height, 0px));
+}
+
+.main-nav-header {
+  top: calc(var(--opening-announcement-height, 0px) + var(--top-contact-height, 0px));
+}
+
+.top-bar {
+  position: fixed !important;
+  top: var(--opening-announcement-height, 0px);
+  left: 0;
+  right: 0;
+  z-index: 1190;
+  box-shadow: 0 2px 8px rgba(4, 38, 61, 0.16);
+}
+
 .opening-announcement-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.85rem;
+  width: min(100%, 1200px);
+  margin: 0 auto;
+}
+
+.opening-announcement-message {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.opening-announcement-message-scroll {
   display: inline-block;
   min-width: max-content;
   padding-left: 100%;
-  white-space: nowrap;
-  animation: opening-announcement-scroll 20s linear infinite;
+  animation: opening-message-scroll 22s linear infinite;
+  will-change: transform;
 }
 
-.opening-announcement a {
-  color: #ffffff;
-  font-weight: 700;
-  text-decoration: underline;
-  text-underline-offset: 0.15em;
-}
-
-.opening-announcement:hover .opening-announcement-track,
-.opening-announcement:focus-within .opening-announcement-track {
+.opening-announcement:hover .opening-announcement-message-scroll,
+.opening-announcement:focus-within .opening-announcement-message-scroll {
   animation-play-state: paused;
 }
 
-@keyframes opening-announcement-scroll {
+@keyframes opening-message-scroll {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .opening-announcement {
-    padding-inline: 1rem;
-    text-align: center;
+.opening-announcement .opening-announcement-cta {
+  flex: 0 0 auto;
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.42rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+}
+
+.opening-announcement .opening-announcement-cta:hover,
+.opening-announcement .opening-announcement-cta:focus-visible {
+  background: #ffffff;
+  color: #0a4d7c;
+}
+
+.opening-announcement-close {
+  flex: 0 0 auto;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: transparent;
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.opening-announcement-close:hover,
+.opening-announcement-close:focus-visible {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+@media (max-width: 767px) {
+  .opening-announcement-track {
+    flex-wrap: wrap;
+    gap: 0.5rem 0.75rem;
   }
 
-  .opening-announcement-track {
-    display: block;
+  .opening-announcement-message {
+    flex: 1 1 calc(100% - 48px);
+    text-align: left;
+  }
+
+  .opening-announcement-cta {
+    margin-left: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .opening-announcement-message {
+    white-space: normal;
+  }
+
+  .opening-announcement-message-scroll {
     min-width: 0;
     padding-left: 0;
-    white-space: normal;
     animation: none;
   }
 }
@@ -1212,6 +1290,89 @@ h1, h2, h3, h4, h5, h6,
   scroll-margin-top: 8rem;
 }
 
+.opening-hero-card {
+  padding: clamp(1.25rem, 2.5vw, 1.75rem);
+  background: linear-gradient(145deg, rgba(4, 38, 61, 0.95), rgba(6, 117, 120, 0.88));
+  border: 1px solid rgba(134, 235, 225, 0.52);
+  box-shadow: 0 20px 48px rgba(1, 20, 34, 0.34), 0 0 34px rgba(23, 184, 166, 0.2);
+  backdrop-filter: blur(6px);
+}
+
+.schedule-inline .opening-hero-eyebrow {
+  margin-bottom: 0.35rem !important;
+  color: #b9fff5 !important;
+  -webkit-text-fill-color: #b9fff5 !important;
+  font-size: 0.72rem !important;
+  font-weight: 700;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.opening-hero-card h2 {
+  font-size: clamp(1.45rem, 2.3vw, 2rem) !important;
+  line-height: 1.15 !important;
+  margin-bottom: 0.55rem !important;
+}
+
+.schedule-inline .opening-hero-intro {
+  margin-bottom: 1rem !important;
+}
+
+.opening-milestones {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+}
+
+.opening-milestone {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: 0.75rem 0.65rem;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  text-align: center;
+}
+
+.opening-milestone:first-child {
+  background: linear-gradient(145deg, #28c8b5, #119688);
+  box-shadow: 0 10px 24px rgba(17, 150, 136, 0.34);
+}
+
+.opening-milestone:last-child {
+  background: linear-gradient(145deg, #45c9ed, #228dc5);
+  box-shadow: 0 10px 24px rgba(34, 141, 197, 0.34);
+}
+
+.opening-milestone strong {
+  display: block;
+  font-size: 0.9rem;
+  line-height: 1.2;
+}
+
+.opening-milestone span {
+  display: block;
+  margin-top: 0.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.68rem;
+  line-height: 1.25;
+}
+
+.opening-hero-card .schedule-inline-button {
+  background: #ffffff;
+  color: #075b64 !important;
+  box-shadow: 0 8px 20px rgba(1, 37, 51, 0.24);
+}
+
+.opening-hero-card .schedule-inline-button:hover,
+.opening-hero-card .schedule-inline-button:focus-visible {
+  background: #cffff7;
+  color: #043e48 !important;
+}
+
 .schedule-inline h2 {
   color: #ffffff !important;
   font-size: clamp(1.05rem, 1.5vw, 1.25rem) !important;
@@ -1282,6 +1443,17 @@ h1, h2, h3, h4, h5, h6,
 @media (max-width: 767px) {
   .schedule-inline {
     padding: 1.15rem;
+  }
+
+  .opening-hero-card {
+    width: 100%;
+    max-width: 34rem;
+  }
+
+  .opening-milestone {
+    aspect-ratio: auto;
+    min-height: 82px;
+    border-radius: 10px;
   }
 }
 

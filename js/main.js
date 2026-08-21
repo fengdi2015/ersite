@@ -136,4 +136,33 @@ $(document).ready(function() {
         }
     });
 
+    // Reserve exactly enough space for the fixed announcement at every screen size.
+    const openingAnnouncement = document.getElementById('openingAnnouncement');
+    const topContactBar = document.querySelector('.top-bar');
+    const getVisibleHeight = function(element) {
+        if (!element || element.getClientRects().length === 0 || window.getComputedStyle(element).display === 'none') {
+            return 0;
+        }
+        return Math.ceil(element.getBoundingClientRect().height);
+    };
+    const syncFixedHeaderHeights = function() {
+        const announcementHeight = getVisibleHeight(openingAnnouncement);
+        const contactHeight = getVisibleHeight(topContactBar);
+        document.documentElement.style.setProperty('--opening-announcement-height', announcementHeight + 'px');
+        document.documentElement.style.setProperty('--top-contact-height', contactHeight + 'px');
+    };
+
+    syncFixedHeaderHeights();
+    $(window).on('resize', syncFixedHeaderHeights);
+    if (window.ResizeObserver) {
+        const fixedHeaderObserver = new ResizeObserver(syncFixedHeaderHeights);
+        if (openingAnnouncement) fixedHeaderObserver.observe(openingAnnouncement);
+        if (topContactBar) fixedHeaderObserver.observe(topContactBar);
+    }
+
+    // Keep the opening notice available on future visits after a visitor dismisses it.
+    $('#openingAnnouncementClose').on('click', function() {
+        $('#openingAnnouncement').slideUp(180, syncFixedHeaderHeights);
+    });
+
 });
