@@ -91,7 +91,7 @@ h1, h2, h3, h4, h5, h6,
   text-align: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .top-bar .col-md-6 {
     width: 100%;
     max-width: 100%;
@@ -102,6 +102,13 @@ h1, h2, h3, h4, h5, h6,
   .top-bar-center,
   .top-bar-right {
     justify-content: center;
+  }
+
+  .top-bar .top-item {
+    justify-content: center;
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
   }
 }
 
@@ -365,7 +372,7 @@ body {
   box-shadow: none !important;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1199px) {
   .main-nav-header {
     max-height: 100dvh;
     overflow-y: auto;
