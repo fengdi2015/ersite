@@ -154,10 +154,11 @@
             </div>
         </div>
     </nav>
-    <!-- Opening announcement is ready for a future release; remove `hidden` to display it. -->
-    <div class="opening-announcement" aria-label="Clinic opening announcement" hidden>
+    <div class="opening-announcement" id="openingAnnouncement" role="status" aria-label="Clinic opening announcement">
         <div class="opening-announcement-track">
-            <span>Welcome, patients! Essential Rheumatology is opening soon. Call <a href="tel:+18603256908" aria-label="Call Essential Rheumatology at 860-325-6908">860-325-6908</a> to schedule your appointment before our official opening.</span>
+            <span class="opening-announcement-message"><span class="opening-announcement-message-scroll"><strong>Essential Rheumatology is opening soon.</strong> Limited appointments will be available beginning in the second half of September 2026, with our full schedule opening in October 2026.</span></span>
+            <a class="opening-announcement-cta call-action" href="tel:+18603256908" data-phone="860-325-6908" aria-label="Call Essential Rheumatology at 860-325-6908 to schedule">Call to Schedule</a>
+            <button class="opening-announcement-close" id="openingAnnouncementClose" type="button" aria-label="Dismiss opening announcement">&times;</button>
         </div>
     </div>
     </header>
@@ -177,19 +178,15 @@
                         </div>
                         <p class="portal-redirect-note"><em>You’ll be redirected to mycw260.ecwcloud.com in a new browser tab.</em></p>
                     </div>
-                    <aside class="schedule-inline" id="cta" data-crm-section="cta" aria-labelledby="schedule-title">
+                    <aside class="schedule-inline opening-hero-card" id="cta" data-crm-section="cta" aria-labelledby="schedule-title">
                         <div class="schedule-inline-copy">
-                            <h2 id="schedule-title">Ready to schedule a visit?</h2>
-                            <p>Call our Avon office at <strong>860-325-6908</strong> for an evaluation and personalized rheumatology care.</p>
-                            <details class="schedule-prep">
-                                <summary>What should I prepare?</summary>
-                                <ul>
-                                    <li>Photo ID and insurance card</li>
-                                    <li>Medication and allergy list</li>
-                                    <li>Referral, if required</li>
-                                    <li>Relevant medical records</li>
-                                </ul>
-                            </details>
+                            <p class="opening-hero-eyebrow">Now scheduling</p>
+                            <h2 id="schedule-title">We’re Opening Soon</h2>
+                            <p class="opening-hero-intro">Personalized rheumatology care is coming to our community.</p>
+                            <div class="opening-milestones" aria-label="Opening schedule">
+                                <div class="opening-milestone"><strong>Late September</strong><span>Limited appointments</span></div>
+                                <div class="opening-milestone"><strong>October 2026</strong><span>Full schedule opens</span></div>
+                            </div>
                         </div>
                         <a href="tel:+18603256908" class="schedule-inline-button call-action" data-phone="860-325-6908" aria-label="Call 860-325-6908 to schedule"><span>Call to Schedule</span><span class="schedule-phone-number">860-325-6908</span></a>
                     </aside>
