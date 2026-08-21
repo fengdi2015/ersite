@@ -6,14 +6,61 @@
 /* ========== Global ========== */
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0;
   font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif !important;
   color: #1f2933 !important;
   background: #ffffff !important;
   line-height: 1.6;
   overflow-x: hidden;
+}
+
+@media (max-width: 1199px) {
+  .top-bar,
+  .opening-announcement,
+  .main-nav-header,
+  .main-nav,
+  .hero,
+  .clinic-strip,
+  main,
+  .main-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .top-bar .container,
+  .main-nav .container,
+  .hero .container,
+  .clinic-strip .container,
+  main > .container,
+  .main-footer .container {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
+  }
+
+  .top-bar .row,
+  .main-nav .navbar-collapse,
+  .hero-layout,
+  .hero-copy,
+  .schedule-inline {
+    min-width: 0;
+    max-width: 100%;
+  }
 }
 
 .container {
@@ -259,17 +306,34 @@ body {
 
 @media (max-width: 767px) {
   .opening-announcement-track {
-    flex-wrap: wrap;
-    gap: 0.5rem 0.75rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 40px;
+    gap: 0.5rem 0.65rem;
+    width: 100%;
   }
 
   .opening-announcement-message {
-    flex: 1 1 calc(100% - 48px);
+    grid-column: 1 / -1;
+    min-width: 0;
+    width: 100%;
     text-align: left;
   }
 
   .opening-announcement-cta {
-    margin-left: auto;
+    grid-column: 1;
+    grid-row: 2;
+    justify-self: start;
+    max-width: 100%;
+    margin: 0;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .opening-announcement-close {
+    grid-column: 2;
+    grid-row: 2;
+    align-self: center;
+    justify-self: end;
   }
 }
 
