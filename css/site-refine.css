@@ -309,7 +309,8 @@ h1, h2, h3, h4, h5, h6,
   }
 
   .opening-announcement-message {
-    grid-column: 1 / -1;
+    grid-column: 1;
+    grid-row: 1;
     min-width: 0;
     width: 100%;
     text-align: left;
@@ -327,7 +328,7 @@ h1, h2, h3, h4, h5, h6,
 
   .opening-announcement-close {
     grid-column: 2;
-    grid-row: 2;
+    grid-row: 1;
     align-self: center;
     justify-self: end;
   }
@@ -1389,6 +1390,59 @@ h1, h2, h3, h4, h5, h6,
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.65rem;
+}
+
+.operations-notice {
+  margin-top: 1rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid rgba(185, 255, 245, 0.38);
+  border-radius: 10px;
+  background: rgba(0, 31, 45, 0.3);
+}
+
+.operations-notice h3 {
+  margin: 0;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.operations-notice-list {
+  display: grid;
+  gap: 0.35rem;
+  margin: 0.6rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.operations-notice-list li {
+  position: relative;
+  padding-left: 1rem;
+  color: #fff;
+  font-size: 0.82rem;
+  line-height: 1.4;
+}
+
+.operations-notice-list li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: #b9fff5;
+}
+
+.schedule-inline .operations-emergency,
+.schedule-inline .operations-thanks {
+  margin: 0.8rem 0 0;
+  color: rgba(255, 255, 255, 0.94);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.schedule-inline .operations-thanks {
+  margin-top: 0.55rem;
+  font-style: italic;
 }
 
 .opening-milestone {
