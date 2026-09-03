@@ -1,6 +1,2 @@
 User-agent: *
-Allow: /
-Disallow: /conditions/
-Disallow: /providers/
-
-Sitemap: https://www.essentialrheumatology.com/sitemap.xml
+Disallow: /

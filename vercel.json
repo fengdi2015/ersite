@@ -1,0 +1,19 @@
+{
+  "redirects": [
+    {
+      "source": "/forms.html",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/providers/:path*",
+      "destination": "/",
+      "permanent": false
+    },
+    {
+      "source": "/conditions/:path*",
+      "destination": "/",
+      "permanent": false
+    }
+  ]
+}
